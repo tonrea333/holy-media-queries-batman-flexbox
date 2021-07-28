@@ -49,3 +49,139 @@
   width: 100vw;
   background-color: #f08a4b;
 }
+
+
+@media screen and (min-width: 700px){
+  #app{
+  font-size: 5em;
+  text-align: center;
+  height: 100vh;
+    display: grid;
+    grid-template-columns: 100px ;
+grid-template-rows: 100px 100px 100px 100px 100px;
+    grid-template-areas:
+    "header1"
+    "nav1"
+    "articles1"
+    '"ads1"'
+    "footer1";
+  }
+  #header {
+    grid-area: header1;
+    background-color: #f3ca40;
+    height: 20vh;
+    width: 100vw;
+  }
+  #middle {
+    grid-area: middle1;
+    justify-content: space-around;
+    align-items: stretch;
+    height: 60vh;
+    width: 100vw;
+  }
+  
+  #main {
+    display: flex;
+    
+    width: 80%;
+  }
+  
+  #nav {
+    grid-area: nav1;
+    width: 20%;
+    background-color: #4b4e6d;
+  }
+  
+  #articles {
+    grid-area: articles1;
+    width: 60vw;
+    background-color: #6a8d92;
+  }
+  
+  #ads {
+    grid-area: ads1;
+    width: 20vw;
+    background-color: #f2a541;
+  }
+  
+  #footer {
+    grid-area: footer1;
+    height: 20vh;
+    width: 100vw;
+    background-color: #f08a4b;
+  }
+
+  
+}
+
+@media screen and (max-width: 1100px) and ( min-width: 700px) {
+  #app{
+    font-size: 5em;
+    text-align: center;
+    height: 100vh;
+      display: grid;
+      grid-template-columns: 100px ;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+      grid-template-areas:
+      "header1"
+      ''
+      ''
+      ''
+      "footer1";
+    }
+    #header {
+      grid-area: header1;
+      background-color: #f3ca40;
+      height: 20vh;
+      width: 100vw;
+    }
+    #middle {
+      display: grid;
+      grid-template-columns: 100px ;
+      grid-template-rows: 100px 100px 100px 100px 100px;
+      grid-template-areas:
+      ""
+      "nav1"
+      "articles1"
+      "ads1"
+      "";
+      justify-content: space-around;
+      align-items: stretch;
+      height: 60vh;
+      width: 100vw;
+    }
+    
+    #main {
+      display: flex;
+      
+      width: 80%;
+    }
+    
+    #nav {
+      grid-area: nav1;
+      width: 20%;
+      background-color: #4b4e6d;
+    }
+    
+    #articles {
+      grid-area: articles1;
+      width: 60vw;
+      background-color: #6a8d92;
+    }
+    
+    #ads {
+      grid-area: ads1;
+      width: 20vw;
+      background-color: #f2a541;
+    }
+    
+    #footer {
+      grid-area: footer1;
+      height: 20vh;
+      width: 100vw;
+      background-color: #f08a4b;
+    }
+  
+    
+  
+}
